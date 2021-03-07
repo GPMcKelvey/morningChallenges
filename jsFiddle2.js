@@ -2,26 +2,25 @@ const searchForm = document.querySelector("button");
 let store;
 let product;
 let quantity;
-//let text; 
-searchForm.addEventListener("click", setVariables);
-
-function setVariables (e) {
+let text; 
+let result;
+searchForm.addEventListener("click", function setVariables (e) {
     e.preventDefault();
     store = document.getElementById("store").value;
     product = document.getElementById("product").value;
     quantity = document.getElementById("quantity").value;
     //console.log(`I went to ${store} to buy ${quantity} ${product}`);
-    
-}
-let text = `I went to ${store} to buy ${quantity} ${product}`;
-console.log(text);
+    text = `I went to ${store} to buy ${quantity} ${product}`; 
+    result = document.querySelector("p").innerText = text;
+      
+    console.log(text);
+});
 
 
-
-
-// const result = document.querySelector(".result");
-
-// result.appendChild(text);
+// .then(text => {
+//   let texts = text;
+  
+// });
 
 
 
@@ -35,3 +34,26 @@ console.log(text);
     - declare a variable of result that accesses an element with a class of result from the HTML file
     - append the variable of text to the HTML file
 */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .then(text =>
+// );
+
+
+// const result = document.querySelector(".result");
+
+// result.appendChild(text);

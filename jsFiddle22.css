@@ -1,0 +1,23 @@
+/* 1. Each image must have a border-radius
+2. Each image must have a border
+3. Each image must be centered */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#imageOne { 
+    border-style: solid;
+    border-width: 1em;
+    border-radius: 25%;
+    border-color: orange;
+}
+
+#imageTwo { 
+    border-style: solid;
+    border-width: 1em;
+    border-radius: 25%;
+    border-color: greenyellow;
+}

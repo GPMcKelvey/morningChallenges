@@ -7,30 +7,31 @@ let favoriteMovie = {
             name: "Luke",
             age: 25,
             items: [
-                {
-                    item: "some item"
-                },
-                {
-                    item: "other item"
-                },
+                    {
+                        item: "Nothing is a real cool hand"
+                    },
+                    {
+                        item: "Hard boiled champion" 
+                    }
             ]
+            
         },
         {
             name: "Dragline",
             age: 30,
             items: [
                 {
-                    item: "some sort of data"
-                },
-                {
-                    item:"other bit of data"
+                    item: "Leader of the pack"
+                 },
+                 {
+                    item: "Assigner of nicknames"
                 }
             ]
         }
     ]
 }
 
-let aName = [favoriteMovie].characters[name][0];
-console.log(favoriteMovie["nameOfMovie"]);
-console.log(favoriteMovie["runTime"]);
-console.log(aName);
+console.log(favoriteMovie.nameOfMovie);
+console.log(favoriteMovie.runTime);
+console.log(favoriteMovie.characters[0].name);
+console.log(favoriteMovie.characters[1].items[1].item);
